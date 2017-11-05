@@ -28,7 +28,11 @@ class MaxHeap {
 	}
 
 	isEmpty() {
-
+		if(this.root){
+			return false;
+		}
+		else 
+			return true;
 	}
 
 	clear() {
@@ -37,6 +41,10 @@ class MaxHeap {
 	}
 
 	insertNode(node) {
+		if(this.root == null){
+			this.root = node;
+		}
+
 	}
 
 	shiftNodeUp(node) {

@@ -48,9 +48,6 @@ class Node {
 		var empty = this.parent;
 		this.parent.parent = this;
 		this.parent = this.parent.parentOfParent;
-
-		
-
 	}
 }
 
